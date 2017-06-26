@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+            html, body { margin: 0; padding: 0; }
+            iframe { border: none; width: 100%; height: 100%; position: fixed; left: 0; top: 0; }
+        </style>
+    </head>
+    <body style="background-color: transparent;">
+        <iframe id="ado-{CONTENTID}" src="about:blank" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1" style="background-color: transparent;"></iframe>
+        <script type="text/javascript">
+            var middleman = "{MIDDLEMAN}";
+            if (middleman == "{MIDDLE" + "MAN}") middleman = "https://{CONTENT_URL}/content/{CONTENTID}?"
+            else middleman = middleman + ((middleman.indexOf("?") != -1) ? "&" : "?") + "id={CONTENTID}&";
+            document.getElementById("ado-{CONTENTID}").setAttribute("src", middleman + "player=true&experience&sdk=true&referer=%2A&host={SCRIPT_URL}");
+        </script>
+        <script type="text/javascript" src="https://{SCRIPT_URL}/scripts/vroptimal.js"></script>
+        <script>
+            window.location = 'omnivirtbridge://initialize?null';
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+framework module VRKit {
+  umbrella header "VRKit.h"
+
+  export *
+  module * { export * }
+}
+
+module VRKit.Swift {
+    header "VRKit-Swift.h"
+}
