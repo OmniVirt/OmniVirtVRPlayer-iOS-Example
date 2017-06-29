@@ -215,8 +215,8 @@ SWIFT_CLASS("_TtC11OmniVirtSDK4VRAd")
 @interface VRAd : UIViewController <VRAdDelegate, VRQRScannerViewControllerDelegate>
 + (VRAd * _Nonnull)createWithAdSpaceID:(uint)adSpaceID andViewController:(UIViewController * _Nonnull)controller andListener:(id <VRAdDelegate> _Nonnull)listener SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
-- (void)load;
-- (void)unload;
+- (void)loadAd;
+- (void)unloadAd;
 - (void)show;
 - (void)showWithCardboardMode:(enum Mode)mode;
 - (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
@@ -226,6 +226,11 @@ SWIFT_CLASS("_TtC11OmniVirtSDK4VRAd")
 - (void)qrScannerFinishWithScanner:(VRQRScannerViewController * _Nonnull)scanner;
 - (void)qrScannerSkipWithScanner:(VRQRScannerViewController * _Nonnull)scanner;
 - (void)setupTransparentModeWithMode:(enum Mode)mode;
+- (BOOL)isLoading SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isShowing SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isCompleted SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isFailed SWIFT_WARN_UNUSED_RESULT;
 - (void)adStatusChangedWithAd:(VRAd * _Nonnull)ad andStatus:(enum AdState)status;
 @property (nonatomic, readonly) enum AdState status;
 @property (nonatomic, strong) id <VRAdDelegate> _Nullable delegate;
