@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07EFEF9D1F04C45000F5F18A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFEF9C1F04C45000F5F18A /* AppDelegate.swift */; };
+		07EFEF9F1F04C45000F5F18A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFEF9E1F04C45000F5F18A /* ViewController.swift */; };
+		07EFEFA41F04C45000F5F18A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07EFEFA31F04C45000F5F18A /* Assets.xcassets */; };
+		07EFEFA71F04C45000F5F18A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EFEFA51F04C45000F5F18A /* LaunchScreen.storyboard */; };
+		07EFEFB21F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFEFB11F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleTests.swift */; };
+		07EFEFBD1F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07EFEFBC1F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleUITests.swift */; };
+		07EFEFCC1F04C57A00F5F18A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07EFEFCA1F04C57A00F5F18A /* Main.storyboard */; };
+		6F81A6E13396273EA2B7EAED /* libPods-OmniVirt VRPlayer Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0D3D2715DCF1020A728CCB /* libPods-OmniVirt VRPlayer Example.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07EFEFAE1F04C45000F5F18A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07EFEF911F04C45000F5F18A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07EFEF981F04C45000F5F18A;
+			remoteInfo = "OmniVirt VRPlayer Example";
+		};
+		07EFEFB91F04C45000F5F18A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07EFEF911F04C45000F5F18A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07EFEF981F04C45000F5F18A;
+			remoteInfo = "OmniVirt VRPlayer Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EFEF991F04C45000F5F18A /* OmniVirt VRPlayer Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OmniVirt VRPlayer Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EFEF9C1F04C45000F5F18A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07EFEF9E1F04C45000F5F18A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07EFEFA31F04C45000F5F18A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07EFEFA61F04C45000F5F18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07EFEFA81F04C45000F5F18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EFEFAD1F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OmniVirt VRPlayer ExampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EFEFB11F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmniVirt_VRPlayer_ExampleTests.swift; sourceTree = "<group>"; };
+		07EFEFB31F04C45000F5F18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EFEFB81F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OmniVirt VRPlayer ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07EFEFBC1F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmniVirt_VRPlayer_ExampleUITests.swift; sourceTree = "<group>"; };
+		07EFEFBE1F04C45000F5F18A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07EFEFCB1F04C57A00F5F18A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19CE503CABE28835FFA05FAD /* Pods-OmniVirt VRPlayer Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmniVirt VRPlayer Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OmniVirt VRPlayer Example/Pods-OmniVirt VRPlayer Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2F0D3D2715DCF1020A728CCB /* libPods-OmniVirt VRPlayer Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OmniVirt VRPlayer Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D7DFFA6D9FADAF1C629A82D /* Pods-OmniVirt VRPlayer Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OmniVirt VRPlayer Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-OmniVirt VRPlayer Example/Pods-OmniVirt VRPlayer Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07EFEF961F04C45000F5F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F81A6E13396273EA2B7EAED /* libPods-OmniVirt VRPlayer Example.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EFEFAA1F04C45000F5F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EFEFB51F04C45000F5F18A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07EFEF901F04C45000F5F18A = {
+			isa = PBXGroup;
+			children = (
+				07EFEF9B1F04C45000F5F18A /* OmniVirt VRPlayer Example */,
+				07EFEFB01F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests */,
+				07EFEFBB1F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests */,
+				07EFEF9A1F04C45000F5F18A /* Products */,
+				190AD1CD0E931DDB8B181221 /* Pods */,
+				2EDD90DBE776A626F9CFCF4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07EFEF9A1F04C45000F5F18A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07EFEF991F04C45000F5F18A /* OmniVirt VRPlayer Example.app */,
+				07EFEFAD1F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests.xctest */,
+				07EFEFB81F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07EFEF9B1F04C45000F5F18A /* OmniVirt VRPlayer Example */ = {
+			isa = PBXGroup;
+			children = (
+				07EFEF9C1F04C45000F5F18A /* AppDelegate.swift */,
+				07EFEF9E1F04C45000F5F18A /* ViewController.swift */,
+				07EFEFCA1F04C57A00F5F18A /* Main.storyboard */,
+				07EFEFA31F04C45000F5F18A /* Assets.xcassets */,
+				07EFEFA51F04C45000F5F18A /* LaunchScreen.storyboard */,
+				07EFEFA81F04C45000F5F18A /* Info.plist */,
+			);
+			path = "OmniVirt VRPlayer Example";
+			sourceTree = "<group>";
+		};
+		07EFEFB01F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				07EFEFB11F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleTests.swift */,
+				07EFEFB31F04C45000F5F18A /* Info.plist */,
+			);
+			path = "OmniVirt VRPlayer ExampleTests";
+			sourceTree = "<group>";
+		};
+		07EFEFBB1F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07EFEFBC1F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleUITests.swift */,
+				07EFEFBE1F04C45000F5F18A /* Info.plist */,
+			);
+			path = "OmniVirt VRPlayer ExampleUITests";
+			sourceTree = "<group>";
+		};
+		190AD1CD0E931DDB8B181221 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19CE503CABE28835FFA05FAD /* Pods-OmniVirt VRPlayer Example.debug.xcconfig */,
+				5D7DFFA6D9FADAF1C629A82D /* Pods-OmniVirt VRPlayer Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2EDD90DBE776A626F9CFCF4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F0D3D2715DCF1020A728CCB /* libPods-OmniVirt VRPlayer Example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07EFEF981F04C45000F5F18A /* OmniVirt VRPlayer Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EFEFC11F04C45000F5F18A /* Build configuration list for PBXNativeTarget "OmniVirt VRPlayer Example" */;
+			buildPhases = (
+				2FEC7EDE834AAD2BF925617E /* [CP] Check Pods Manifest.lock */,
+				07EFEF951F04C45000F5F18A /* Sources */,
+				07EFEF961F04C45000F5F18A /* Frameworks */,
+				07EFEF971F04C45000F5F18A /* Resources */,
+				1AD9A40CE7035A65A2ECFD39 /* [CP] Embed Pods Frameworks */,
+				5E8152386A546D9C90176327 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OmniVirt VRPlayer Example";
+			productName = "OmniVirt VRPlayer Example";
+			productReference = 07EFEF991F04C45000F5F18A /* OmniVirt VRPlayer Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07EFEFAC1F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EFEFC41F04C45000F5F18A /* Build configuration list for PBXNativeTarget "OmniVirt VRPlayer ExampleTests" */;
+			buildPhases = (
+				07EFEFA91F04C45000F5F18A /* Sources */,
+				07EFEFAA1F04C45000F5F18A /* Frameworks */,
+				07EFEFAB1F04C45000F5F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07EFEFAF1F04C45000F5F18A /* PBXTargetDependency */,
+			);
+			name = "OmniVirt VRPlayer ExampleTests";
+			productName = "OmniVirt VRPlayer ExampleTests";
+			productReference = 07EFEFAD1F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07EFEFB71F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EFEFC71F04C45000F5F18A /* Build configuration list for PBXNativeTarget "OmniVirt VRPlayer ExampleUITests" */;
+			buildPhases = (
+				07EFEFB41F04C45000F5F18A /* Sources */,
+				07EFEFB51F04C45000F5F18A /* Frameworks */,
+				07EFEFB61F04C45000F5F18A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07EFEFBA1F04C45000F5F18A /* PBXTargetDependency */,
+			);
+			name = "OmniVirt VRPlayer ExampleUITests";
+			productName = "OmniVirt VRPlayer ExampleUITests";
+			productReference = 07EFEFB81F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07EFEF911F04C45000F5F18A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = OmniVirt;
+				TargetAttributes = {
+					07EFEF981F04C45000F5F18A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 35UAU2ZP8G;
+						ProvisioningStyle = Automatic;
+					};
+					07EFEFAC1F04C45000F5F18A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 35UAU2ZP8G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07EFEF981F04C45000F5F18A;
+					};
+					07EFEFB71F04C45000F5F18A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 35UAU2ZP8G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07EFEF981F04C45000F5F18A;
+					};
+				};
+			};
+			buildConfigurationList = 07EFEF941F04C45000F5F18A /* Build configuration list for PBXProject "OmniVirt VRPlayer Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07EFEF901F04C45000F5F18A;
+			productRefGroup = 07EFEF9A1F04C45000F5F18A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07EFEF981F04C45000F5F18A /* OmniVirt VRPlayer Example */,
+				07EFEFAC1F04C45000F5F18A /* OmniVirt VRPlayer ExampleTests */,
+				07EFEFB71F04C45000F5F18A /* OmniVirt VRPlayer ExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07EFEF971F04C45000F5F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EFEFCC1F04C57A00F5F18A /* Main.storyboard in Resources */,
+				07EFEFA71F04C45000F5F18A /* LaunchScreen.storyboard in Resources */,
+				07EFEFA41F04C45000F5F18A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EFEFAB1F04C45000F5F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EFEFB61F04C45000F5F18A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AD9A40CE7035A65A2ECFD39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmniVirt VRPlayer Example/Pods-OmniVirt VRPlayer Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FEC7EDE834AAD2BF925617E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8152386A546D9C90176327 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OmniVirt VRPlayer Example/Pods-OmniVirt VRPlayer Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07EFEF951F04C45000F5F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EFEF9F1F04C45000F5F18A /* ViewController.swift in Sources */,
+				07EFEF9D1F04C45000F5F18A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EFEFA91F04C45000F5F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EFEFB21F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07EFEFB41F04C45000F5F18A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07EFEFBD1F04C45000F5F18A /* OmniVirt_VRPlayer_ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07EFEFAF1F04C45000F5F18A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07EFEF981F04C45000F5F18A /* OmniVirt VRPlayer Example */;
+			targetProxy = 07EFEFAE1F04C45000F5F18A /* PBXContainerItemProxy */;
+		};
+		07EFEFBA1F04C45000F5F18A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07EFEF981F04C45000F5F18A /* OmniVirt VRPlayer Example */;
+			targetProxy = 07EFEFB91F04C45000F5F18A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07EFEFA51F04C45000F5F18A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07EFEFA61F04C45000F5F18A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		07EFEFCA1F04C57A00F5F18A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07EFEFCB1F04C57A00F5F18A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07EFEFBF1F04C45000F5F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07EFEFC01F04C45000F5F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07EFEFC21F04C45000F5F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CE503CABE28835FFA05FAD /* Pods-OmniVirt VRPlayer Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
+				INFOPLIST_FILE = "OmniVirt VRPlayer Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.vrplayer.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		07EFEFC31F04C45000F5F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7DFFA6D9FADAF1C629A82D /* Pods-OmniVirt VRPlayer Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
+				INFOPLIST_FILE = "OmniVirt VRPlayer Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.vrplayer.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		07EFEFC51F04C45000F5F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
+				INFOPLIST_FILE = "OmniVirt VRPlayer ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omnivirt.OmniVirt-VRPlayer-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmniVirt VRPlayer Example.app/OmniVirt VRPlayer Example";
+			};
+			name = Debug;
+		};
+		07EFEFC61F04C45000F5F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
+				INFOPLIST_FILE = "OmniVirt VRPlayer ExampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omnivirt.OmniVirt-VRPlayer-ExampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OmniVirt VRPlayer Example.app/OmniVirt VRPlayer Example";
+			};
+			name = Release;
+		};
+		07EFEFC81F04C45000F5F18A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
+				INFOPLIST_FILE = "OmniVirt VRPlayer ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omnivirt.OmniVirt-VRPlayer-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "OmniVirt VRPlayer Example";
+			};
+			name = Debug;
+		};
+		07EFEFC91F04C45000F5F18A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
+				INFOPLIST_FILE = "OmniVirt VRPlayer ExampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omnivirt.OmniVirt-VRPlayer-ExampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "OmniVirt VRPlayer Example";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07EFEF941F04C45000F5F18A /* Build configuration list for PBXProject "OmniVirt VRPlayer Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EFEFBF1F04C45000F5F18A /* Debug */,
+				07EFEFC01F04C45000F5F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07EFEFC11F04C45000F5F18A /* Build configuration list for PBXNativeTarget "OmniVirt VRPlayer Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EFEFC21F04C45000F5F18A /* Debug */,
+				07EFEFC31F04C45000F5F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07EFEFC41F04C45000F5F18A /* Build configuration list for PBXNativeTarget "OmniVirt VRPlayer ExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EFEFC51F04C45000F5F18A /* Debug */,
+				07EFEFC61F04C45000F5F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07EFEFC71F04C45000F5F18A /* Build configuration list for PBXNativeTarget "OmniVirt VRPlayer ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07EFEFC81F04C45000F5F18A /* Debug */,
+				07EFEFC91F04C45000F5F18A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07EFEF911F04C45000F5F18A /* Project object */;
+}

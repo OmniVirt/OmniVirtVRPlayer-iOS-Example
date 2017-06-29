@@ -1,0 +1,10 @@
+framework module OmniVirtSDK {
+  umbrella header "OmniVirtSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module OmniVirtSDK.Swift {
+    header "OmniVirtSDK-Swift.h"
+}

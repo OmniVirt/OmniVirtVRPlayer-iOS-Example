@@ -1,0 +1,3 @@
+target 'OmniVirt VRPlayer Example'
+pod 'OmniVirtSDK'
+

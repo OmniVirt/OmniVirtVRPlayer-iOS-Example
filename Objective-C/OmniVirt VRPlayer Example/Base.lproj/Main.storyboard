@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usG-sQ-HVi">
+                                <rect key="frame" x="0.0" y="287" width="375" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="380" id="Bxg-Lm-Tdc">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8D-7r-UbL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VkU-tw-hiX"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.1215686275" green="0.37254901959999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="OmniVirt VRPlayer Example" id="hfw-ft-FTm"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nIw-Pt-DgS" customClass="VRPlayer" customModule="OmniVirtSDK">
+                                <rect key="frame" x="0.0" y="64" width="375" height="223"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nIw-Pt-DgS" secondAttribute="trailing" id="AAv-Wb-DAy"/>
+                            <constraint firstItem="nIw-Pt-DgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HyT-xT-rfT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="usG-sQ-HVi" secondAttribute="bottom" id="IiL-o4-6gY"/>
+                            <constraint firstItem="usG-sQ-HVi" firstAttribute="top" secondItem="nIw-Pt-DgS" secondAttribute="bottom" id="K6A-fn-xR4"/>
+                            <constraint firstItem="U8D-7r-UbL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Rut-m1-YOX"/>
+                            <constraint firstItem="nIw-Pt-DgS" firstAttribute="top" secondItem="U8D-7r-UbL" secondAttribute="bottom" id="Skt-ag-Xo5"/>
+                            <constraint firstItem="U8D-7r-UbL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bDM-eb-SlP"/>
+                            <constraint firstAttribute="trailing" secondItem="U8D-7r-UbL" secondAttribute="trailing" id="dek-25-NJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="usG-sQ-HVi" secondAttribute="trailing" id="lt7-Z9-p3H"/>
+                            <constraint firstItem="usG-sQ-HVi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mmG-64-svg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="log" destination="usG-sQ-HVi" id="3hh-Fd-bft"/>
+                        <outlet property="logHeight" destination="Bxg-Lm-Tdc" id="mfK-an-wGv"/>
+                        <outlet property="player" destination="nIw-Pt-DgS" id="RW3-9v-0lq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="38.028169014084504"/>
+        </scene>
+    </scenes>
+</document>
