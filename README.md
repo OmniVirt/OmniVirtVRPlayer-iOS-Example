@@ -13,14 +13,15 @@ Visit [omnivirt.com](https://omnivirt.com/) to upload your VR content. Contact u
 
 CocoaPods is the most conventient way to add the OmniVirt SDK to your app. Check out [www.cocoapods.org](www.cocoapods.org) for more information.
 
-1. Add the following line to your podfile
+- Add the following line to your podfile.
 ```
 pod 'OmniVirtSDK'
 ```
-2. Run this in your build directory to add
+- Install dependencies.
 ```
 $ pod install
 ```
+- Open the newly created `.xcworkspace`
 
 # Usage
 
