@@ -1,4 +1,4 @@
-# OmniVirtVRPlayer-iOS-Example
+# OmniVirt VR Player: 360° Video Player for iOS
 
 ![Screenshot](https://github.com/OmniVirt/OmniVirtVRPlayer-Android-Example/blob/master/screenshot4.jpg?raw=true)
 
@@ -7,11 +7,11 @@
 
 Visit [omnivirt.com](https://omnivirt.com/) to upload your VR content. Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com).
 
-## Add the OmniVirt SDK to your app
+# Add the OmniVirt SDK to your app
 
-### Using CocoaPods
+## Using CocoaPods
 
-CocoaPods is the most conventient way to add the OmniVirt SDK to your app. Check out www.cocoapods.org for more information.
+CocoaPods is the most conventient way to add the OmniVirt SDK to your app. Check out [www.cocoapods.org](www.cocoapods.org) for more information.
 
 1. Add the following line to your podfile
 ```
@@ -22,11 +22,11 @@ pod 'OmniVirtSDK'
 $ pod install
 ```
 
-## Usage
+# Usage
 
-**OmniVirt VR Player** for iOS provides you a really easy way to embed 360° content on your Android application with just few lines of code.
+**OmniVirt VR Player** for iOS provides you a really easy way to embed 360° content in your iOS application with just few lines of code.
 
-### Get Started
+## Get Started
 
 1. **Sign up** for an account at [OmniVirt](www.omnivirt.com)
 2. **Upload** your VR / 360° photo or video on [OmniVirt](https://www.omnivirt.com/).
@@ -34,11 +34,11 @@ $ pod install
 
 Now the content is ready. There are two methods that you can use OmniVirt VR Player to play your VR content on your application.
 
-### Method 1: Launch a Fullscreen VR Player
+## Method 1: Launch a Fullscreen VR Player
 
 This method lets you play a VR content with just a single line of code !
 
-#### Usage
+### Swift
 
 ```swift
 FullscreenVRPlayer.launch(viewController: self,
@@ -48,10 +48,20 @@ FullscreenVRPlayer.launch(viewController: self,
                           )
 ```
 
+### Objective-C
+
+```objc
+[FullscreenVRPlayer launchWithContentID:CONTENT_ID  // Replace with your Content ID
+                    andAutoplay:YES
+                    andCardboardMode:ModeOff]
+```
+
 And ... done ! That's all !
 
-#### Extra: Earn Money
+### Extra: Earn Money
 Would like to earn money from your 360° content? You can create an **Ad Space** on [OmniVirt](www.omnivirt.com) and pass the **Ad Space ID** acquired to the command like shown below to enable ad on the player.
+
+### Swift
 
 ```swift
 FullscreenVRPlayer.launch(viewController: self,
@@ -62,9 +72,18 @@ FullscreenVRPlayer.launch(viewController: self,
                           )
 ```
 
+### Objective-C
+
+```objc
+[FullscreenVRPlayer launchWithContentID:CONTENT_ID  // Replace with your Content ID
+                    andAutoplay:YES
+                    andCardboardMode:ModeOff
+                    andAdSpaceIDNumber:[NSNumber numberWithInt: AD_SPACE_ID]] // Replace with your Ad Space ID
+```
+
 Once you set it up correctly, user will sometime see an ad among the player and that will turn into your revenue !
 
-#### Player Callback
+### Player Callback
 
 Any change on the player could be detected by implementing `VRPlayerDelegate` interface inside the **caller class**. Here is the example.
 
@@ -209,20 +228,27 @@ class ViewController: UIViewController, VRPlayerDelegate {
 ```
 
 
-### Method 2: Embed a VR Player on a View with `VRPlayer`
+## Method 2: Embed a VR Player on a View with `VRPlayer`
  
 OmniVirt VR Player also provides you an UIView that allows you to embed a VR Player on your View.
 
-#### Use Storyboard to add a VRPlayer
+### Use Storyboard to add a VRPlayer
  
-1. Create new UIView and assign Class as VRPlayer
+1. Place a new UIView and assign Class as `VRPlayer` with the module `OmniVirtSDK`
+
 ![Screenshot](https://camo.githubusercontent.com/0640ae3c5118955ff16c8c984bcfc9e2b8a947ac/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6164736f7074696d616c2d3364782d6173736574732f6d616e75616c5f75706c6f61642f77696b692f737465702b312b2d2b436865636b2b5652506c617965722b566965772e706e67)
 
-2. Create an IBOutlet and link it to VRPlayer View
+2. Create an IBOutlet and link it to a created VRPlayer UIView
 ```swift
 @IBOutlet weak var player: VRPlayer!
 ```
-#### Or Add a VRPlayer programmatically
+
+You can now make use of VRPlayer through `player` variable.
+
+### Add a VRPlayer programmatically
+
+You can also add a player programatically with the following code snippet.
+
 ```swift
 let player = VRPlayer.create()
 player.load(withContentID: CONTENT_ID) // Replace with your Content ID
@@ -231,30 +257,32 @@ view.addSubview(player)
 player.layoutSubviews()
 ```
 
+### Play Content
 
-#### Play Content
-To start playing, add the following snippet to your view controller and replace `CONTENT_ID` with your VR Content's.
+To start playing your VR content, add the following snippet to your view controller and replace `CONTENT_ID` with your VR content's.
+
 ```swift
+// Register a callback
 player.delegate = self
+// Load a content
 player.load(contentID: CONTENT_ID) // Replace with your Content ID
+// Set player parameter
 player.cardboard = .Off
 ```
 
 Player callback could also be retrieved by the same approach as sample above.
 
-
-To support autoplay content call play() in playerLoaded callback
+To support autoplay content call `play()` in `playerLoaded` callback
 ```swift
 func playerLoaded(_ player: VRPlayer, withMaximumQuality maximum:Int, andCurrentQuality current:Quality, andCardboardMode mode:Mode) {
     player.play()
 }
 ```
 
+# QR Code for Cardboard Alignment
 
+You can also launch QR Code scanner to calibrate Cardboard by scanning a QR Code comes along with the Cardboard. To do so, call this following function.
 
-## QR Code for Cardboard Alignment
- 
-To launch QR Code scanner to scan a QR Code comes along with the Cardboard, call this following function.
 ```swift
 VRQRScannerViewController.launchCardboardQRScanner(delegate: self)
 ```
