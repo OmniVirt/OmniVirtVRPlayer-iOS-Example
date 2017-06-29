@@ -236,7 +236,7 @@ OmniVirt VR Player also provides you an UIView that allows you to embed a VR Pla
  
 1. Place a new UIView and assign Class as `VRPlayer` with the module `OmniVirtSDK`
 
-![Screenshot](https://camo.githubusercontent.com/0640ae3c5118955ff16c8c984bcfc9e2b8a947ac/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6164736f7074696d616c2d3364782d6173736574732f6d616e75616c5f75706c6f61642f77696b692f737465702b312b2d2b436865636b2b5652506c617965722b566965772e706e67)
+![Screenshot](https://github.com/OmniVirt/OmniVirtVRPlayer-iOS-Example/raw/master/Screenshots/ssstoryboard.png)
 
 2. Create an IBOutlet and link it to a created VRPlayer UIView
 ```swift
