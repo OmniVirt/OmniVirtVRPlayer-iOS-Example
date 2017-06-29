@@ -61,7 +61,7 @@ And ... done ! That's all !
 ### Extra: Earn Money
 Would like to earn money from your 360° content? You can create an **Ad Space** on [OmniVirt](www.omnivirt.com) and pass the **Ad Space ID** acquired to the command like shown below to enable ad on the player.
 
-### Swift
+#### Swift
 
 ```swift
 FullscreenVRPlayer.launch(viewController: self,
@@ -72,7 +72,7 @@ FullscreenVRPlayer.launch(viewController: self,
                           )
 ```
 
-### Objective-C
+#### Objective-C
 
 ```objc
 [FullscreenVRPlayer launchWithContentID:CONTENT_ID  // Replace with your Content ID
