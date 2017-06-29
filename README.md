@@ -81,7 +81,7 @@ FullscreenVRPlayer.launch(viewController: self,
                     andAdSpaceIDNumber:[NSNumber numberWithInt: AD_SPACE_ID]] // Replace with your Ad Space ID
 ```
 
-Once you set it up correctly, user will sometime see an ad among the player and that will turn into your revenue !
+Once it is set up correctly, user will sometime see an ad among the player and that will turn into your revenue !
 
 ### Player Callback
 
