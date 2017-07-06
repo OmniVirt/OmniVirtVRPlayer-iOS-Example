@@ -11,7 +11,7 @@ Visit [omnivirt.com](https://omnivirt.com/) to upload your VR content. Contact u
 
 ## Using CocoaPods
 
-CocoaPods is the most conventient way to add the OmniVirt SDK to your app. Check out [www.cocoapods.org](www.cocoapods.org) for more information.
+CocoaPods is the most conventient way to add the OmniVirt SDK to your app. Check out [www.cocoapods.org](https://www.cocoapods.org) for more information.
 
 - Add the following line to your podfile.
 ```
@@ -29,7 +29,7 @@ $ pod install
 
 ## Get Started
 
-1. **Sign up** for an account at [OmniVirt](www.omnivirt.com)
+1. **Sign up** for an account at [OmniVirt](https://www.omnivirt.com)
 2. **Upload** your VR / 360° photo or video on [OmniVirt](https://www.omnivirt.com/).
 3. Keep the **Content ID** assigned to your content for further use.
 
