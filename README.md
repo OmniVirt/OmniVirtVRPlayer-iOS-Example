@@ -42,10 +42,9 @@ This method lets you play a VR content with just a single line of code !
 ### Swift
 
 ```swift
-FullscreenVRPlayer.launch(viewController: self,
-                          contentID: CONTENT_ID, // Replace with your Content ID
-                          autoplay: true,
-                          cardboardMode: .Off
+FullscreenVRPlayer.launch(withContentID: CONTENT_ID, // Replace with your Content ID
+                          andAutoplay: true,
+                          andCardboardMode: Mode.Off
                           )
 ```
 
@@ -65,11 +64,10 @@ Would like to earn money from your 360° content? You can create an **Ad Space**
 #### Swift
 
 ```swift
-FullscreenVRPlayer.launch(viewController: self,
-                          contentID: CONTENT_ID, // Replace with your Content ID
-                          autoplay: true,
-                          cardboardMode: .Off,
-                          adSpaceID: ADSPACE_ID  // Replace with your Ad Space ID
+FullscreenVRPlayer.launch(withContentID: CONTENT_ID, // Replace with your Content ID
+                          andAutoplay: true,
+                          andCardboardMode: .Off,
+                          andAdSpaceID: ADSPACE_ID  // Replace with your Ad Space ID
                           )
 ```
 
@@ -94,10 +92,9 @@ class ViewController: UIViewController, VRPlayerDelegate {
     ...
     
     func play() {
-        let player = FullscreenVRPlayer.launch(viewController: self,
-                                               contentID: 24,
-                                               autoplay: true,
-                                               cardboardMode: .Off
+        let player = FullscreenVRPlayer.launch(withContentID: 24,
+                                               andAutoplay: true,
+                                               andCardboardMode: .Off
                                               )
         player.delegate = self
     }
