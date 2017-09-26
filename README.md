@@ -42,10 +42,13 @@ This method lets you play a VR content with just a single line of code !
 ### Swift
 
 ```swift
-FullscreenVRPlayer.launch(withContentID: CONTENT_ID, // Replace with your Content ID
+let fsplayer = FullscreenVRPlayer.launch(withContentID: CONTENT_ID, // Replace with your Content ID
                           andAutoplay: true,
                           andCardboardMode: Mode.Off
                           )
+fsplayer.modalPresentationStyle = .fullScreen
+self.present(fsplayer, animated: true) {
+}
 ```
 
 ### Objective-C
