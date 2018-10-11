@@ -7,4 +7,5 @@ framework module OmniVirtSDK {
 
 module OmniVirtSDK.Swift {
     header "OmniVirtSDK-Swift.h"
+    requires objc
 }

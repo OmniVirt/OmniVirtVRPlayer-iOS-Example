@@ -165,6 +165,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import AVFoundation;
 @import CoreGraphics;
+@import Darwin;
 @import UIKit;
 @import WebKit;
 #endif
@@ -198,11 +199,18 @@ typedef SWIFT_ENUM(NSInteger, Feature, closed) {
   FeatureGyroscope = 1,
 };
 
+enum Mode : NSInteger;
+@class NSNumber;
+@protocol VRPlayerDelegate;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC11OmniVirtSDK18FullscreenVRPlayer")
 @interface FullscreenVRPlayer : UIViewController
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber andDelegate:(id <VRPlayerDelegate> _Nullable)listener SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber andDelegate:(id <VRPlayerDelegate> _Nullable)listener andMiddlemanURL:(NSString * _Nullable)middleman SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
@@ -242,11 +250,24 @@ SWIFT_PROTOCOL("_TtP11OmniVirtSDK12VRAdDelegate_")
 
 SWIFT_CLASS("_TtC11OmniVirtSDK4VRAd")
 @interface VRAd : UIViewController <VRAdDelegate, VRQRScannerViewControllerDelegate>
++ (VRAd * _Nonnull)createWithAdSpaceID:(uint)adSpaceID andViewController:(UIViewController * _Nonnull)controller andListener:(id <VRAdDelegate> _Nonnull)listener SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
+- (void)loadAd;
+- (void)unloadAd;
+- (void)show;
+- (void)showWithCardboardMode:(enum Mode)mode;
+- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
+- (void)switchCardBoard;
 - (void)qrScannerFinishWithScanner:(VRQRScannerViewController * _Nonnull)scanner;
 - (void)qrScannerSkipWithScanner:(VRQRScannerViewController * _Nonnull)scanner;
+- (void)setupTransparentModeWithMode:(enum Mode)mode;
+- (BOOL)isLoading SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isReady SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isShowing SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isCompleted SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isFailed SWIFT_WARN_UNUSED_RESULT;
 - (void)adStatusChangedWithAd:(VRAd * _Nonnull)ad andStatus:(enum AdState)status;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -262,6 +283,20 @@ SWIFT_CLASS("_TtC11OmniVirtSDK8VRPlayer")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
+- (void)loadWithContentID:(uint)contentID;
+- (void)loadWithContentID:(uint)contentID andMiddlemanFileURL:(NSString * _Nonnull)middleman;
+- (void)unload;
+- (void)setupTransparentModeWithMode:(enum Mode)mode;
+- (void)play;
+- (void)pause;
+- (void)expand;
+- (void)collapse;
+- (void)back;
+- (void)enableWithFeature:(enum Feature)feature;
+- (void)disableWithFeature:(enum Feature)feature;
+- (void)switchSceneWithName:(NSString * _Nonnull)name;
+- (void)sendMessageWithType:(NSString * _Nonnull)type andValue:(id _Nullable)value;
+@property (nonatomic, strong) id <VRPlayerDelegate> _Nullable delegate;
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
