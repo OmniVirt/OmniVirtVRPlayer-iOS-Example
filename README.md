@@ -42,6 +42,9 @@ This method lets you play a VR content with just a single line of code !
 ### Swift
 
 ```swift
+import OmniVirtSDK
+```
+```swift
 let fsplayer = FullscreenVRPlayer.launch(withContentID: CONTENT_ID, // Replace with your Content ID
                           andAutoplay: true,
                           andCardboardMode: Mode.Off
@@ -53,6 +56,9 @@ self.present(fsplayer, animated: true) {
 
 ### Objective-C
 
+```objc
+import <OmniVirtSDK>
+```
 ```objc
 [FullscreenVRPlayer launchWithContentID:CONTENT_ID  // Replace with your Content ID
                     andAutoplay:YES
