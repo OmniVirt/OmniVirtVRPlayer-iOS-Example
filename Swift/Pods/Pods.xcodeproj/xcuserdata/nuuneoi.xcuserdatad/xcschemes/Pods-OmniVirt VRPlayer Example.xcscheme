@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '85AC9B95F5F615C799321810CF1DD8B1'
-               BlueprintName = 'Pods-OmniVirt VRPlayer Example'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-OmniVirt VRPlayer Example.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "93EFAA8052FA831A8D725C643B9F6E4B"
+               BuildableName = "libPods-OmniVirt VRPlayer Example.a"
+               BlueprintName = "Pods-OmniVirt VRPlayer Example"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

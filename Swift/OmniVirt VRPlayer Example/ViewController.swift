@@ -10,6 +10,10 @@ import UIKit
 import OmniVirtSDK
 
 class ViewController: UIViewController, VRPlayerDelegate {
+    func playerMessageReceived(_ player: VRPlayer, withType type: String, andValue json: String) {
+        
+    }
+    
     @IBOutlet weak var player: VRPlayer!
     @IBOutlet weak var log: UITextView!
     @IBOutlet weak var logHeight: NSLayoutConstraint!
@@ -39,12 +43,12 @@ class ViewController: UIViewController, VRPlayerDelegate {
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(ViewController.rotate(_:)),
-            name: NSNotification.Name.UIDeviceOrientationDidChange,
+            name: UIDevice.orientationDidChangeNotification,
             object: nil)
     }
     
-    func rotate(_ notification: Notification) {
-        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+    @objc func rotate(_ notification: Notification) {
+        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDevice.current.orientation.isPortrait)
         {
             if (isExpanded) {
                 logHeight.constant = 0.0;
@@ -104,7 +108,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
         log.text! += "Expanded\n"
         isExpanded = true;
         
-        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDevice.current.orientation.isPortrait)
         {
             logHeight.constant = 0.0
         }
@@ -113,7 +117,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
         log.text! += "Collapsed\n"
         isExpanded = false;
         
-        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDevice.current.orientation.isPortrait)
         {
             logHeight.constant = 380.0
         }
