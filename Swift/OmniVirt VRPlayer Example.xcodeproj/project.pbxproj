@@ -490,7 +490,7 @@
 				INFOPLIST_FILE = "OmniVirt VRPlayer Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.vrplayer.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lab.omnivirt.vrplayer.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -505,7 +505,7 @@
 				INFOPLIST_FILE = "OmniVirt VRPlayer Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.vrplayer.example;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lab.omnivirt.vrplayer.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
